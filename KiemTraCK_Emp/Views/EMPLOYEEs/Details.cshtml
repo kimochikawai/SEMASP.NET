@@ -1,0 +1,50 @@
+﻿@model KiemTraCK_Emp.Models.EMPLOYEE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EMPLOYEE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPLOYEEID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPLOYEEID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPLOYEENAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPLOYEENAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DEPARTMENT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEPARTMENT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALARY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALARY)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
